@@ -1,0 +1,26 @@
+{
+	"php inline if": {
+		"prefix": "pif",
+		"body": [
+			"<?php if($1) : ?>",
+			"\t$0",
+            "<?php endif ?>"
+		]
+	},
+
+    "php inline else": {
+		"prefix": "pelse",
+		"body": [
+			"<?php else : ?>",
+			"\t$0",
+            "<?php endif ?>"
+		]
+	},
+    
+    "php inline echo": {
+		"prefix": "echo",
+		"body": [
+			"<?= $0 ?>",
+		]
+	}
+}
